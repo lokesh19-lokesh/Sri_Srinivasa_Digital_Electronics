@@ -529,5 +529,46 @@ body {
     max-width: 100%;
     margin: 0 auto;
   }
+
+  /* Content Sections 2x2 Mobile layout */
+  .features-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 30px 5%;
+  }
+
+  .feature-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 10px;
+  }
+
+  .feature-card .icon {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .feature-card h3 {
+    font-size: 0.8rem;
+  }
+
+  .problems-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .problem-card {
+    padding: 20px 15px;
+  }
+
+  .problem-card h4 {
+    font-size: 0.95rem;
+    margin-bottom: 8px;
+  }
+
+  .problem-card p {
+    font-size: 0.8rem;
+  }
 }
 
