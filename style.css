@@ -1211,3 +1211,76 @@ body {
   }
 }
 
+/* FLOATING WIDGETS */
+.floating-widgets {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.float-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  pointer-events: auto;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: none;
+  cursor: pointer;
+}
+
+.float-wa {
+  background: linear-gradient(135deg, #25D366, #128C7E);
+}
+
+.float-wa:hover {
+  transform: scale(1.1) translateY(-5px);
+  box-shadow: 0 10px 25px rgba(37, 211, 102, 0.5);
+}
+
+.float-up {
+  background: var(--bg-secondary);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--accent-cyan);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+}
+
+.float-up.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.float-up:hover {
+  background: var(--accent-cyan);
+  color: #000;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .floating-widgets {
+    bottom: 20px;
+    right: 20px;
+  }
+  .float-btn {
+    width: 50px;
+    height: 50px;
+  }
+  .float-btn svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+

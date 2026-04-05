@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import FloatingWidgets from './components/FloatingWidgets';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import About from './pages/About';
@@ -19,6 +20,7 @@ function App() {
         <Route path="/booking" element={<Booking />} />
       </Routes>
       <Footer />
+      <FloatingWidgets />
     </>
   );
 }
