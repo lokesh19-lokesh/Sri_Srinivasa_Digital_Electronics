@@ -1,43 +1,129 @@
-import { useNavigate } from 'react-router-dom';
+import { useState } from 'react';
 
 export default function Booking() {
-  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    name: '', phone: '', email: '',
+    brand: '', issue: '', address: '',
+    date: ''
+  });
+
+  const handleChange = (e) => setFormData({ ...formData, [e.target.name]: e.target.value });
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert('Booking Confirmed! (UI Only)');
-    navigate('/');
+    alert('Your inspection slot is reserved! Our team will contact you momentarily to confirm timings.');
   };
 
   return (
     <>
-      <div className="page-hero">
-        <h1>Book Your <span className="glow-text" style={{ color: 'var(--accent-blue)' }}>Repair</span></h1>
-        <p>Fast, reliable service at your doorstep. Schedule an expert diagnosis today.</p>
+      <div className="page-hero" style={{ minHeight: '30vh', padding: '120px 5% 40px' }}>
+        <h1>Schedule a <span className="text-gradient">Repair</span></h1>
+        <p>Expert Doorstep Inspection & Diagnosis for ₹299.</p>
       </div>
 
-      <section className="content-section">
-        <div style={{ maxWidth: '700px', margin: '0 auto', background: 'var(--bg-secondary)', padding: '40px', borderRadius: '20px' }}>
-            <form style={{ display: 'flex', flexDirection: 'column', gap: '20px' }} onSubmit={handleSubmit}>
-                
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
-                    <input type="text" placeholder="Full Name" style={{ padding: '15px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)', background: 'var(--bg-primary)', color: '#fff', width: '100%', outline: 'none' }} required />
-                    <input type="tel" placeholder="Phone Number" style={{ padding: '15px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)', background: 'var(--bg-primary)', color: '#fff', width: '100%', outline: 'none' }} required />
+      <section className="booking-section">
+        <div className="booking-container">
+          
+          <div className="booking-sidebar">
+            <h3 className="glow-text">Why Book With Us?</h3>
+            <ul className="service-checklist" style={{ marginTop: '20px', gap: '20px' }}>
+              <li>
+                <div style={{ fontSize: '1.5rem', marginRight: '15px' }}>🚀</div>
+                <div>
+                  <h4 style={{ color: '#fff', fontSize: '1.1rem' }}>Same-Day Doorstep Visit</h4>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>We reach you within hours</p>
                 </div>
+              </li>
+              <li>
+                <div style={{ fontSize: '1.5rem', marginRight: '15px' }}>🛠️</div>
+                <div>
+                  <h4 style={{ color: '#fff', fontSize: '1.1rem' }}>Original Spare Parts</h4>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>100% genuine guaranteed</p>
+                </div>
+              </li>
+              <li>
+                <div style={{ fontSize: '1.5rem', marginRight: '15px' }}>🛡️</div>
+                <div>
+                  <h4 style={{ color: '#fff', fontSize: '1.1rem' }}>365 Days Warranty</h4>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>On all replaced parts</p>
+                </div>
+              </li>
+              <li>
+                <div style={{ fontSize: '1.5rem', marginRight: '15px' }}>💳</div>
+                <div>
+                  <h4 style={{ color: '#fff', fontSize: '1.1rem' }}>Transparent Pricing</h4>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>Upfront quote after diagnostic</p>
+                </div>
+              </li>
+            </ul>
+            
+            <div className="price-tag-box">
+              <span className="price-label">Inspection Visit</span>
+              <span className="price-amount">₹299</span>
+              <span className="price-note">Adjusted in final repair bill</span>
+            </div>
+          </div>
 
-                <select style={{ padding: '15px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)', background: 'var(--bg-primary)', color: '#fff', width: '100%', outline: 'none', appearance: 'none', cursor: 'pointer' }} required defaultValue="">
-                    <option value="" disabled>Select Device Type</option>
-                    <option value="led">LED TV</option>
-                    <option value="oled">OLED TV</option>
-                    <option value="qled">QLED TV</option>
-                    <option value="plasma">Plasma TV</option>
-                    <option value="audio">Home Theater / Audio</option>
-                </select>
+          <div className="contact-form-wrapper" style={{ flex: 1, padding: '40px' }}>
+            <h2 style={{ marginBottom: '5px' }}>Service Request Form</h2>
+            <p style={{ color: 'var(--text-secondary)', marginBottom: '30px' }}>Fill in your details and we will dispatch a technician to your location.</p>
+            
+            <form className="premium-form booking-form" onSubmit={handleSubmit}>
+              
+              <div className="form-row">
+                <div className="input-group">
+                  <label>Full Name</label>
+                  <input type="text" name="name" placeholder="John Doe" onChange={handleChange} required />
+                </div>
+                <div className="input-group">
+                  <label>Mobile Number</label>
+                  <input type="tel" name="phone" placeholder="+91 99999 99999" onChange={handleChange} required />
+                </div>
+              </div>
 
-                <textarea placeholder="Describe the issue (e.g. No display, distorted sound, etc.)" rows="4" style={{ padding: '15px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)', background: 'var(--bg-primary)', color: '#fff', width: '100%', outline: 'none', resize: 'none' }} required></textarea>
-                
-                <button type="submit" className="btn-cta" style={{ border: 'none', cursor: 'pointer', padding: '18px', fontSize: '1.1rem', marginTop: '10px' }}>Confirm Booking Request</button>
+              <div className="form-row">
+                <div className="input-group">
+                  <label>TV Brand</label>
+                  <select name="brand" onChange={handleChange} required>
+                    <option value="" disabled selected>Select TV Brand</option>
+                    <option value="Samsung">Samsung</option>
+                    <option value="LG">LG</option>
+                    <option value="Sony">Sony</option>
+                    <option value="Mi">Mi / Xiaomi</option>
+                    <option value="OnePlus">OnePlus</option>
+                    <option value="Panasonic">Panasonic</option>
+                    <option value="TCL">TCL</option>
+                    <option value="Other">Other Brand</option>
+                  </select>
+                </div>
+                <div className="input-group">
+                  <label>Main Problem</label>
+                  <select name="issue" onChange={handleChange} required>
+                    <option value="" disabled selected>What's wrong?</option>
+                    <option value="Display Broken/Lines">Screen Lines / Broken</option>
+                    <option value="No Power">Won't Turn On (No Power)</option>
+                    <option value="No Picture but Sound">No Picture, Has Sound</option>
+                    <option value="No Sound">No Sound</option>
+                    <option value="Software Issue">Software / WiFi Issue</option>
+                    <option value="Other">Other / Not Sure</option>
+                  </select>
+                </div>
+              </div>
+
+              <div className="input-group">
+                <label>Complete Address (Hyderabad area)</label>
+                <textarea name="address" placeholder="Flat No, Building, Street, Landmark, Pincode" rows="3" onChange={handleChange} required></textarea>
+              </div>
+
+              <div className="input-group">
+                <label>Preferred Date</label>
+                <input type="date" name="date" onChange={handleChange} required style={{ colorScheme: 'dark' }} />
+              </div>
+
+              <button type="submit" className="btn-cta submit-btn" style={{ marginTop: '20px' }}>Confirm Booking Request</button>
             </form>
+          </div>
+
         </div>
       </section>
     </>
