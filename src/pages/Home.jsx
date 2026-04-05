@@ -110,47 +110,118 @@ export default function Home() {
   }, { scope: container });
 
   return (
-    <div className="canvas-container" ref={container}>
-      <div className="sticky-wrapper">
-        <canvas id="hero-lightpass" ref={canvasRef}></canvas>
-        
-        <div className="story-sections">
-          <div className="story-step step-center" id="step-1">
-            <h2 className="text-gradient">Professional TV Repair</h2>
-            <p className="glow-text">Fast. Reliable. Affordable.</p>
-            <p style={{ fontSize: '1.1rem', marginTop: '10px' }}>We fix all LED, OLED, Smart TVs at your doorstep</p>
-          </div>
+    <>
+      <div className="canvas-container" ref={container}>
+        <div className="sticky-wrapper">
+          <canvas id="hero-lightpass" ref={canvasRef}></canvas>
+          
+          <div className="story-sections">
+            <div className="story-step step-center" id="step-1">
+              <h2 className="text-gradient">Professional TV Repair</h2>
+              <p className="glow-text">Fast. Reliable. Affordable.</p>
+              <p style={{ fontSize: '1.1rem', marginTop: '10px' }}>We fix all LED, OLED, Smart TVs at your doorstep</p>
+            </div>
 
-          <div className="story-step step-left" id="step-2">
-            <h2 className="text-gradient">Advanced Diagnostics</h2>
-            <p>We identify issues at component level</p>
-            <p>with precision engineering tools.</p>
-          </div>
+            <div className="story-step step-left" id="step-2">
+              <h2 className="text-gradient">Advanced Diagnostics</h2>
+              <p>We identify issues at component level</p>
+              <p>with precision engineering tools.</p>
+            </div>
 
-          <div className="story-step step-right" id="step-3">
-            <h2 className="text-gradient">Expert Repair Service</h2>
-            <ul style={{ listStyle: 'none', fontSize: '1.2rem', color: 'var(--text-secondary)', textShadow: '0 2px 5px rgba(0,0,0,0.8)' }}>
-              <li>✓ Screen Replacement</li>
-              <li>✓ Motherboard Repair</li>
-              <li>✓ Power Issue Resolution</li>
-              <li>✓ Audio Optimization</li>
-            </ul>
-          </div>
+            <div className="story-step step-right" id="step-3">
+              <h2 className="text-gradient">Expert Repair Service</h2>
+              <ul style={{ listStyle: 'none', fontSize: '1.2rem', color: 'var(--text-secondary)', textShadow: '0 2px 5px rgba(0,0,0,0.8)' }}>
+                <li>✓ Screen Replacement</li>
+                <li>✓ Motherboard Repair</li>
+                <li>✓ Power Issue Resolution</li>
+                <li>✓ Audio Optimization</li>
+              </ul>
+            </div>
 
-          <div className="story-step step-center" id="step-4">
-            <h2 className="glow-text" style={{ color: 'var(--accent-cyan)' }}>Precision Repair Process</h2>
-            <p>Every part is tested, repaired, and optimized.</p>
-          </div>
+            <div className="story-step step-center" id="step-4">
+              <h2 className="glow-text" style={{ color: 'var(--accent-cyan)' }}>Precision Repair Process</h2>
+              <p>Every part is tested, repaired, and optimized.</p>
+            </div>
 
-          <div className="story-step step-center" id="step-5">
-            <h2 className="text-gradient">Your TV. Like New Again.</h2>
-            <p>Experience the ultimate restoration.</p>
-            <Link to="/booking" className="btn-cta" style={{ marginTop: '30px', display: 'inline-block', pointerEvents: 'auto' }}>
-              Book Your Repair Now
-            </Link>
+            <div className="story-step step-center" id="step-5">
+              <h2 className="text-gradient">Your TV. Like New Again.</h2>
+              <p>Experience the ultimate restoration.</p>
+              <Link to="/booking" className="btn-cta" style={{ marginTop: '30px', display: 'inline-block', pointerEvents: 'auto' }}>
+                Book Your Repair Now
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <section className="features-row">
+        <div className="feature-card">
+          <div className="icon">🚀</div>
+          <h3>Same-Day Doorstep Service</h3>
+        </div>
+        <div className="feature-card">
+          <div className="icon">🛡️</div>
+          <h3>365 Days Repair Warranty</h3>
+        </div>
+        <div className="feature-card">
+          <div className="icon">📺</div>
+          <h3>All Brands LED, LCD, OLED</h3>
+        </div>
+        <div className="feature-card">
+          <div className="icon">✓</div>
+          <h3>Genuine Spare Parts</h3>
+        </div>
+      </section>
+
+      <section className="content-section">
+        <div className="section-header" style={{ textAlign: 'center', marginBottom: '50px' }}>
+          <h2>Common TV <span className="text-gradient">Problems We Fix</span></h2>
+          <p style={{ color: 'var(--text-secondary)', marginTop: '10px' }}>From power failures to display issues — our experienced technicians deliver fast, reliable fixes.</p>
+        </div>
+        
+        <div className="problems-grid">
+          <div className="problem-card">
+            <h4>⚡ Power Issues</h4>
+            <p>TV won't turn on, random shutdowns, power board failures.</p>
+          </div>
+          <div className="problem-card">
+            <h4>🖥️ Display Problems</h4>
+            <p>Blank screen, lines on display, color distortion, flickering.</p>
+          </div>
+          <div className="problem-card">
+            <h4>🔊 Sound Issues</h4>
+            <p>No audio, distorted sound, speaker replacement needed.</p>
+          </div>
+          <div className="problem-card">
+            <h4>🔌 Connectivity Problems</h4>
+            <p>WiFi issues, HDMI not working, Bluetooth pairing fails.</p>
+          </div>
+          <div className="problem-card">
+            <h4>⚙️ Motherboard chip level</h4>
+            <p>IC replacement, EEPROM programming, main board component repairs.</p>
+          </div>
+          <div className="problem-card">
+            <h4>💡 Backlight Replacement</h4>
+            <p>Dim display, backlight bleeding, LED strip replacement.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="brands-banner">
+        <h2>Brands We Service</h2>
+        <div className="brands-list">
+          <span>Samsung</span>
+          <span>LG</span>
+          <span>Sony</span>
+          <span>Mi</span>
+          <span>OnePlus</span>
+          <span>Panasonic</span>
+          <span>Philips</span>
+          <span>TCL</span>
+          <span>Hisense</span>
+          <span>Vu</span>
+        </div>
+      </section>
+    </>
   );
 }

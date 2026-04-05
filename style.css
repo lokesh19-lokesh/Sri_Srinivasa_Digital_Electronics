@@ -245,6 +245,103 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+/* HOME PAGE EXTRA SECTIONS */
+.features-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 5%;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 30px;
+  background: var(--bg-primary);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.feature-card .icon {
+  font-size: 1.8rem;
+}
+
+.feature-card h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.problems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.problem-card {
+  background: var(--bg-secondary);
+  padding: 30px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.02);
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(0, 214, 255, 0.2);
+}
+
+.problem-card h4 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 15px;
+}
+
+.problem-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.brands-banner {
+  padding: 60px 0;
+  background: linear-gradient(to bottom, transparent, var(--bg-secondary));
+  text-align: center;
+  overflow: hidden;
+}
+
+.brands-banner h2 {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+.brands-list {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 0 5%;
+}
+
+.brands-list span {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+}
+
+.brands-list span:hover {
+  color: var(--text-primary);
+}
+
 /* FOOTER */
 .footer {
   background-color: var(--bg-secondary);
