@@ -252,10 +252,8 @@ body {
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #fff, var(--text-secondary));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #FFFFFF;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 1), 0 2px 10px rgba(0, 0, 0, 1);
 }
 
 /* HOME PAGE EXTRA SECTIONS */

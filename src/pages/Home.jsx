@@ -64,14 +64,13 @@ export default function Home() {
       onUpdate: render
     }, 0);
 
+    // Set step-1 to be initially visible at top
+    gsap.set("#step-1", { opacity: 1, y: 0 });
+    
     // Text Overlay Animations using component refs or IDs
     gsap.to("#step-1", {
-        opacity: 1, duration: 0.1, y: 0,
-        scrollTrigger: { trigger: container.current, start: "top top", end: "+=15%", scrub: true }
-    });
-    gsap.to("#step-1", {
         opacity: 0, y: -50,
-        scrollTrigger: { trigger: container.current, start: "+=15%", end: "+=20%", scrub: true }
+        scrollTrigger: { trigger: container.current, start: "+=10%", end: "+=20%", scrub: true }
     });
 
     gsap.fromTo("#step-2", 
