@@ -140,6 +140,10 @@ body {
   transform: translateY(-2px);
 }
 
+.mobile-only-cta {
+  display: none;
+}
+
 /* PAGE WRAPPER FOR OTHERS */
 .page-hero {
   padding: 150px 5% 50px;
@@ -881,9 +885,15 @@ body {
     display: flex;
   }
 
-  .btn-cta {
+  .nav-right .btn-cta {
     display: none;
     /* Hide CTA structurally on pure mobile, optionally use within hambuger */
+  }
+
+  .mobile-only-cta {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 1.2rem !important;
   }
 
   /* Full Screen Canvas override for cinematic portrait */

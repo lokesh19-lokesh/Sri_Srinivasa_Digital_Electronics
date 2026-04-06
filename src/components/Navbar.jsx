@@ -25,10 +25,11 @@ export default function Navbar() {
       </Link>
       
       <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <NavLink to="/" end>Overview</NavLink>
-        <NavLink to="/services">Services</NavLink>
-        <NavLink to="/about">About Us</NavLink>
-        <NavLink to="/contact">Contact</NavLink>
+        <NavLink to="/" end onClick={() => setIsOpen(false)}>Overview</NavLink>
+        <NavLink to="/services" onClick={() => setIsOpen(false)}>Services</NavLink>
+        <NavLink to="/about" onClick={() => setIsOpen(false)}>About Us</NavLink>
+        <NavLink to="/contact" onClick={() => setIsOpen(false)}>Contact</NavLink>
+        <Link to="/booking" className="btn-cta mobile-only-cta" onClick={() => setIsOpen(false)}>Book Repair</Link>
       </div>
       
       <div className="nav-right">
