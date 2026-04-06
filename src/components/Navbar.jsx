@@ -20,7 +20,9 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <Link to="/" className="nav-logo"> Sri Srinivasa<span> Digital Electronics</span> </Link>
+      <Link to="/" className="nav-logo">
+        <img src="/assets/logo.png" alt="Sri Srinivasa Digital Electronics" className="logo-img" />
+      </Link>
       
       <div className={`nav-links ${isOpen ? 'open' : ''}`}>
         <NavLink to="/" end>Overview</NavLink>

@@ -19,7 +19,9 @@ export default function Footer() {
       <div className="footer-container">
         
         <div className="footer-col brand-col">
-          <div className="nav-logo">Sri Srinivasa<span> Digital</span></div>
+          <div className="nav-logo">
+            <img src="/assets/logo.png" alt="Sri Srinivasa Digital Electronics" className="logo-img" />
+          </div>
           <p className="footer-desc">
             Hyderabad's trusted TV repair experts. Providing precise component-level diagnostics and same-day doorstep service for all major brands. Your entertainment, restored.
           </p>
