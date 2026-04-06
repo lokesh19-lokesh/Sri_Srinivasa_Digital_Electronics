@@ -114,6 +114,7 @@ export default function Home() {
       <div className="canvas-container" ref={container}>
         <div className="sticky-wrapper">
           <canvas id="hero-lightpass" ref={canvasRef}></canvas>
+          <div className="canvas-overlay"></div>
           
           <div className="story-sections">
             <div className="story-step step-center" id="step-1">
@@ -130,7 +131,7 @@ export default function Home() {
 
             <div className="story-step step-right" id="step-3">
               <h2 className="text-gradient">Expert Repair Service</h2>
-              <ul style={{ listStyle: 'none', fontSize: '1.2rem', color: 'var(--text-secondary)', textShadow: '0 2px 5px rgba(0,0,0,0.8)' }}>
+              <ul style={{ listStyle: 'none', fontSize: '1.2rem', color: 'var(--text-secondary)', textShadow: '0 2px 15px rgba(0,0,0,1), 0 1px 5px rgba(0,0,0,1)' }}>
                 <li>✓ Screen Replacement</li>
                 <li>✓ Motherboard Repair</li>
                 <li>✓ Power Issue Resolution</li>
