@@ -81,7 +81,7 @@ export default function Home() {
       <section className="premium-services-section">
         <div className="section-header">
           <h2>Expert TV Repair Services <span className="text-gradient-branded">in Hyderabad — All Brands, All Models</span></h2>
-          <p className="section-subtitle">Professional grade LED, Smart, 4K, OLED & QLED TV repair delivered at your doorstep. We utilize genuine manufacturer parts and provide a comprehensive 365-day service guarantee. Transparent flat-fee inspection at only ₹299.</p>
+          <p className="section-subtitle">Professional grade LED, Smart, 4K, OLED & QLED TV repair delivered at your doorstep. We utilize genuine manufacturer parts and provide a comprehensive 365-day service guarantee. Transparent flat-fee mobile diagnostics across Hyderabad.</p>
         </div>
         
         <div className="services-grid-new">
@@ -89,7 +89,6 @@ export default function Home() {
           <div className="service-card-white">
             <div className="card-icon-box">📺</div>
             <h3>LED & LCD Surface Repair</h3>
-            <span className="inspection-tag-green">Inspection charges @ ₹299</span>
             <p>Surgical-grade panel and display restoration for all leading brands like Samsung, Sony, and LG. We specialize in resolving line defects, screen flickering, and pixel malfunctions with factory-standard precision.</p>
             <ul className="card-checklist-v2">
               <li><span>✓</span> Backlight System Overhaul</li>
@@ -102,7 +101,6 @@ export default function Home() {
           <div className="service-card-white">
             <div className="card-icon-box">📱</div>
             <h3>Smart TV Logic & OS Tuning</h3>
-            <span className="inspection-tag-green">Inspection charges @ ₹299</span>
             <p>Advanced troubleshooting for Smart TV platforms (Android, WebOS, Tizen). Our experts resolve software bootloops, connectivity drops, and sluggish app performance while optimizing your system's core firmware.</p>
             <ul className="card-checklist-v2">
               <li><span>✓</span> OS & Firmware Optimization</li>
@@ -115,7 +113,6 @@ export default function Home() {
           <div className="service-card-white">
             <div className="card-icon-box">🎨</div>
             <h3>Premium OLED & QLED Calibration</h3>
-            <span className="inspection-tag-green">Inspection charges @ ₹299</span>
             <p>Specialized lab-grade care for high-end OLED and QLED panels. We provide professional pixel refresh, burn-in mitigation strategies, and high-precision panel care to maintain your TV's elite visual performance.</p>
             <ul className="card-checklist-v2">
               <li><span>✓</span> Professional Pixel Refresh</li>
@@ -128,7 +125,6 @@ export default function Home() {
           <div className="service-card-white">
             <div className="card-icon-box">🔊</div>
             <h3>Cinematic Audio & Sound Repair</h3>
-            <span className="inspection-tag-green">Inspection charges @ ₹299</span>
             <p>Full-spectrum audio diagnostics for all TV brands. We surgically repair speaker modules and audio ICs to eliminate distortion and restore the rich, clear sound your entertainment deserves.</p>
             <ul className="card-checklist-v2">
               <li><span>✓</span> Premium Speaker Calibration</li>
@@ -141,7 +137,6 @@ export default function Home() {
           <div className="service-card-white">
             <div className="card-icon-box">⚡</div>
             <h3>Industrial-Grade Motherboard Fix</h3>
-            <span className="inspection-tag-green">Inspection charges @ ₹299</span>
             <p>If your device is unresponsive, our electronic experts troubleshoot the SMPS and main motherboard at the component level. We replace faulty capacitors and ICs with certified factory-grade parts.</p>
             <ul className="card-checklist-v2">
               <li><span>✓</span> SMPS Power Unit Restoration</li>
@@ -154,7 +149,6 @@ export default function Home() {
           <div className="service-card-white">
             <div className="card-icon-box">🏠</div>
             <h3>Hyderabad Elite Doorstep Service</h3>
-            <span className="inspection-tag-green">Inspection charges @ ₹299 (Adjustable)</span>
             <p>Experience premier in-home TV repair across all Hyderabad residential areas. Our mobile service units bring the workshop to your door for fast, on-site diagnostics and immediate resolution of most issues.</p>
             <ul className="card-checklist-v2">
               <li><span>✓</span> Express Same-Day Availability</li>

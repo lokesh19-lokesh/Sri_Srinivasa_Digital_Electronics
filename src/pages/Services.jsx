@@ -5,9 +5,8 @@ export default function Services() {
     <>
       <div className="page-hero">
         <h1>Our <span className="text-gradient">Services</span></h1>
-        <p>Complete repair solutions for LED, Smart, OLED & QLED TVs.</p>
-        <p className="hero-subline">Inspection charges at just ₹299. High Customer Satisfaction.</p>
-      </div>
+        <p>Complete repair solutions for LED, Smart, OLED & QLED TVs. High Customer Satisfaction.</p>
+</div>
 
       <section className="services-feed">
         
@@ -69,7 +68,7 @@ export default function Services() {
 
       <div style={{ textAlign: 'center', paddingBottom: '80px' }}>
         <h2 style={{ marginBottom: '20px', fontSize: '2rem' }}>Ready for a Doorstep Repair?</h2>
-        <Link to="/booking" className="btn-cta" style={{ fontSize: '1.2rem', padding: '15px 40px' }}>Schedule Now - ₹299 Inspection</Link>
+        <Link to="/booking" className="btn-cta" style={{ fontSize: '1.2rem', padding: '15px 40px' }}>Schedule Now - Professional Inspection</Link>
       </div>
     </>
   );

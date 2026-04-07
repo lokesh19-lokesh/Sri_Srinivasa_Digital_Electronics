@@ -18,7 +18,7 @@ export default function Booking() {
     <>
       <div className="page-hero" style={{ minHeight: '30vh', padding: '120px 5% 40px' }}>
         <h1>Schedule a <span className="text-gradient">Repair</span></h1>
-        <p>Expert Doorstep Inspection & Diagnosis for ₹299.</p>
+        <p>Expert Doorstep Inspection & Professional Diagnosis.</p>
       </div>
 
       <section className="booking-section">
@@ -57,11 +57,6 @@ export default function Booking() {
               </li>
             </ul>
             
-            <div className="price-tag-box">
-              <span className="price-label">Inspection Visit</span>
-              <span className="price-amount">₹299</span>
-              <span className="price-note">Adjusted in final repair bill</span>
-            </div>
           </div>
 
           <div className="contact-form-wrapper" style={{ flex: 1, padding: '40px' }}>
