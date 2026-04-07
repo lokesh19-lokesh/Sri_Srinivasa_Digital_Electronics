@@ -6,8 +6,8 @@
   --bg-glass: rgba(10, 10, 12, 0.7);
   --text-primary: #FFFFFF;
   --text-secondary: rgba(255, 255, 255, 0.6);
-  --accent-blue: #0050FF;
-  --accent-cyan: #00D6FF;
+  --accent-red: #E93E2D; /* Primary from logo */
+  --accent-purple: #4F46E5; /* Secondary indigo */
 }
 
 * {
@@ -64,8 +64,8 @@ body {
 }
 
 .nav-logo span {
-  color: var(--accent-cyan);
-  text-shadow: 0 2px 4px rgba(0, 214, 255, 0.3);
+  color: var(--accent-red);
+  text-shadow: 0 2px 4px rgba(233, 62, 45, 0.3);
 }
 
 .nav-links {
@@ -124,7 +124,7 @@ body {
 }
 
 .btn-cta {
-  background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-red));
   color: #fff;
   padding: 10px 24px;
   border-radius: 30px;
@@ -132,11 +132,11 @@ body {
   font-weight: 600;
   font-size: 0.95rem;
   transition: all 0.3s ease;
-  box-shadow: 0 0 15px rgba(0, 214, 255, 0.2);
+  box-shadow: 0 0 15px rgba(233, 62, 45, 0.2);
 }
 
 .btn-cta:hover {
-  box-shadow: 0 0 25px rgba(0, 214, 255, 0.5);
+  box-shadow: 0 0 25px rgba(233, 62, 45, 0.4);
   transform: translateY(-2px);
 }
 
@@ -153,7 +153,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: radial-gradient(circle at top, rgba(0, 80, 255, 0.15) 0%, transparent 60%);
+  background: radial-gradient(circle at top, rgba(233, 62, 45, 0.08) 0%, transparent 60%);
 }
 
 .page-hero h1 {
@@ -242,11 +242,11 @@ body {
 
 .glow-text {
   color: var(--text-primary);
-  text-shadow: 0 0 20px rgba(0, 214, 255, 0.6);
+  text-shadow: 0 0 20px rgba(233, 62, 45, 0.4);
 }
 
 .text-gradient {
-  background: linear-gradient(to right, #fff, var(--accent-cyan));
+  background: linear-gradient(to right, #fff, var(--accent-red));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -301,7 +301,7 @@ body {
 
 .problem-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(0, 214, 255, 0.2);
+  border-color: rgba(233, 62, 45, 0.2);
 }
 
 .problem-card h4 {
@@ -378,8 +378,8 @@ body {
 }
 
 .commitment-box {
-  background: rgba(0, 214, 255, 0.03);
-  border-left: 4px solid var(--accent-cyan);
+  background: rgba(233, 62, 45, 0.03);
+  border-left: 4px solid var(--accent-red);
   padding: 25px 30px;
   margin-bottom: 30px;
   border-radius: 0 10px 10px 0;
@@ -410,7 +410,7 @@ body {
 
 .why-item .icon {
   background: var(--bg-secondary);
-  color: var(--accent-cyan);
+  color: var(--accent-red);
   width: 35px;
   height: 35px;
   display: flex;
@@ -466,9 +466,9 @@ body {
   background: var(--bg-secondary);
   padding: 20px 30px;
   border-radius: 15px;
-  border: 1px solid var(--accent-cyan);
+  border: 1px solid var(--accent-red);
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0, 214, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(233, 62, 45, 0.1);
 }
 
 .stat-number {
@@ -476,7 +476,7 @@ body {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--text-primary);
-  background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-red));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -504,7 +504,7 @@ body {
 
 /* SERVICES PAGE */
 .hero-subline {
-  color: var(--accent-cyan) !important;
+  color: var(--accent-red) !important;
   font-weight: 500;
   margin-top: 10px;
 }
@@ -597,7 +597,7 @@ body {
 }
 
 .info-block h4 {
-  color: var(--accent-cyan);
+  color: var(--accent-red);
   margin-bottom: 5px;
   font-size: 1.1rem;
 }
@@ -615,7 +615,7 @@ body {
 }
 
 .info-block a:hover {
-  color: var(--accent-blue);
+  color: var(--accent-purple);
 }
 
 .map-container {
@@ -658,8 +658,8 @@ body {
 
 .input-group input:focus,
 .input-group textarea:focus {
-  border-color: var(--accent-cyan);
-  box-shadow: 0 0 15px rgba(0, 214, 255, 0.15);
+  border-color: var(--accent-red);
+  box-shadow: 0 0 15px rgba(233, 62, 45, 0.15);
 }
 
 .input-group textarea {
@@ -695,12 +695,12 @@ body {
 
 .price-tag-box {
   margin-top: 40px;
-  background: rgba(0, 214, 255, 0.05);
-  border: 1px solid var(--accent-cyan);
+  background: rgba(233, 62, 45, 0.05);
+  border: 1px solid var(--accent-red);
   padding: 25px;
   border-radius: 15px;
   text-align: left;
-  box-shadow: 0 10px 30px rgba(0, 214, 255, 0.1);
+  box-shadow: 0 10px 30px rgba(233, 62, 45, 0.1);
 }
 
 .price-label {
@@ -724,7 +724,7 @@ body {
 .price-note {
   display: block;
   font-size: 0.85rem;
-  color: var(--accent-cyan);
+  color: var(--accent-red);
 }
 
 .booking-form .input-group label {
@@ -749,7 +749,7 @@ body {
 }
 
 .booking-form select:focus {
-  border-color: var(--accent-cyan);
+  border-color: var(--accent-red);
 }
 
 .booking-form option {
@@ -803,7 +803,7 @@ body {
 }
 
 .footer-contact strong {
-  color: var(--accent-cyan);
+  color: var(--accent-red);
 }
 
 .footer-contact a {
@@ -813,7 +813,7 @@ body {
 }
 
 .footer-contact a:hover {
-  color: var(--accent-blue);
+  color: var(--accent-purple);
 }
 
 .footer-bottom {
@@ -1074,7 +1074,7 @@ body {
   bottom: -8px;
   width: 30px;
   height: 2px;
-  background: var(--accent-cyan);
+  background: var(--accent-red);
 }
 
 .brand-col .nav-logo {
@@ -1103,7 +1103,7 @@ body {
   height: 40px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.05);
-  color: var(--accent-cyan);
+  color: var(--accent-red);
   text-decoration: none;
   font-weight: bold;
   font-size: 0.9rem;
@@ -1111,7 +1111,7 @@ body {
 }
 
 .social-links a:hover {
-  background: var(--accent-cyan);
+  background: var(--accent-red);
   color: #000;
   transform: translateY(-3px);
 }
@@ -1131,7 +1131,7 @@ body {
 }
 
 .links-col a:hover {
-  color: var(--accent-cyan);
+  color: var(--accent-red);
 }
 
 .contact-col .contact-item {
@@ -1146,7 +1146,7 @@ body {
 }
 
 .contact-col .call-link {
-  color: var(--accent-cyan);
+  color: var(--accent-red);
   text-decoration: none;
   font-weight: 500;
 }
@@ -1176,7 +1176,7 @@ body {
 /* THE BUBBLES MEDIA ANIMATION */
 .bubbles-link {
   position: relative;
-  color: #00D6FF;
+  color: var(--accent-red);
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
@@ -1187,10 +1187,10 @@ body {
   position: absolute;
   bottom: 50%;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), rgba(0, 214, 255, 0.7) 70%, transparent);
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9), rgba(233, 62, 45, 0.7) 70%, transparent);
   opacity: 0;
   pointer-events: none;
-  box-shadow: 0 0 10px rgba(0, 214, 255, 0.5);
+  box-shadow: 0 0 10px rgba(233, 62, 45, 0.5);
 }
 
 .bubbles-link:hover .bubble {
@@ -1346,7 +1346,7 @@ body {
 .float-up {
   background: var(--bg-secondary);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--accent-cyan);
+  color: var(--accent-red);
   opacity: 0;
   visibility: hidden;
   transform: translateY(20px);
@@ -1359,7 +1359,7 @@ body {
 }
 
 .float-up:hover {
-  background: var(--accent-cyan);
+  background: var(--accent-red);
   color: #000;
   transform: translateY(-5px);
 }

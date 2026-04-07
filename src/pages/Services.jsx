@@ -18,7 +18,7 @@ export default function Services() {
             <div className="image-overlay"></div>
           </div>
           <div className="service-info">
-            <h3 className="glow-text" style={{ color: 'var(--accent-cyan)' }}>LED, LCD & OLED Display Repair</h3>
+            <h3 className="glow-text" style={{ color: 'var(--accent-red)' }}>LED, LCD & OLED Display Repair</h3>
             <p>We fix backlight issues, panel problems, and display malfunctions. Utilizing high-tech laser diagnostics to salvage delicate glass components safely.</p>
             <ul className="service-checklist">
               <li>✓ Backlight Replacements</li>

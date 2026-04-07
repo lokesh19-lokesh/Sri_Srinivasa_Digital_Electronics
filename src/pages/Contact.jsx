@@ -9,9 +9,9 @@ export default function Contact() {
       <div className="page-hero">
         <h1>Get in <span className="text-gradient">Touch</span></h1>
         <p>Have a question or need emergency support? We're here to help.</p>
-        <div style={{ marginTop: '20px', display: 'inline-block', padding: '10px 20px', background: 'rgba(0, 214, 255, 0.1)', borderRadius: '30px', border: '1px solid var(--accent-cyan)' }}>
+        <div style={{ marginTop: '20px', display: 'inline-block', padding: '10px 20px', background: 'rgba(233, 62, 45, 0.1)', borderRadius: '30px', border: '1px solid var(--accent-red)' }}>
           <p style={{ color: 'var(--text-primary)', margin: 0 }}>
-            TV Repairing Services Helpline: <a href="tel:+918008859990" style={{ color: 'var(--accent-cyan)', textDecoration: 'none', fontWeight: 'bold' }}>+91 80088 59990</a>
+            TV Repairing Services Helpline: <a href="tel:+918008859990" style={{ color: 'var(--accent-red)', textDecoration: 'none', fontWeight: 'bold' }}>+91 80088 59990</a>
           </p>
         </div>
       </div>
