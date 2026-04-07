@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --bg-primary: #050505;
-  --bg-secondary: #0A0A0C;
-  --bg-glass: rgba(10, 10, 12, 0.7);
+  --bg-primary: #0A051A; /* Deep branded indigo */
+  --bg-secondary: #0F0825; /* Slightly lighter indigo for depth */
+  --bg-glass: rgba(10, 5, 26, 0.75);
   --text-primary: #FFFFFF;
   --text-secondary: rgba(255, 255, 255, 0.6);
   --accent-red: #E93E2D; /* Primary from logo */
@@ -42,7 +42,7 @@ body {
   background-color: var(--bg-glass);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(79, 70, 229, 0.15); /* Purple accent border */
 }
 
 .nav-logo {
@@ -210,7 +210,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+  background: linear-gradient(to bottom, rgba(10, 5, 26, 0.3), rgba(10, 5, 26, 0.85));
 }
 
 .hero-content {
@@ -261,8 +261,8 @@ body {
   flex-wrap: wrap;
   gap: 20px;
   padding: 40px 5%;
-  background: var(--bg-secondary);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(to bottom, var(--bg-primary), var(--bg-secondary));
+  border-bottom: 1px solid rgba(79, 70, 229, 0.08);
 }
 
 .feature-card {
@@ -491,8 +491,8 @@ body {
 
 /* FOOTER */
 .footer {
-  background-color: var(--bg-secondary);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: linear-gradient(to bottom, var(--bg-primary), #05030D);
+  border-top: 1px solid rgba(79, 70, 229, 0.1);
   padding: 60px 5% 20px;
   margin-top: auto;
 }
