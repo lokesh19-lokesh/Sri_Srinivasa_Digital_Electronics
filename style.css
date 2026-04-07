@@ -59,11 +59,10 @@ body {
   color: var(--text-primary);
   display: flex;
   align-items: center;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .logo-img {
-  height: min(95px, 12vh);
+  height: 60px; /* Refined compact height matching reference Pic 2 */
   width: auto;
   display: block;
   object-fit: contain;
@@ -257,6 +256,14 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+}
+
+.text-gradient-branded {
+  background: linear-gradient(to right, #39638c, var(--accent-red));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline; /* Changed to inline for better wrapping */
 }
 
 /* HOME PAGE EXTRA SECTIONS */
@@ -1385,5 +1392,143 @@ body {
   .float-btn svg {
     width: 24px;
     height: 24px;
+  }
+}
+/* PREMIUM SERVICES GRID - HOME PAGE */
+.premium-services-section {
+  background-color: #F8F9FF; /* Clean background from ref pic */
+  padding: 100px 5%;
+  text-align: center;
+}
+
+.premium-services-section h2 {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  color: #250D63;
+  margin-bottom: 25px;
+  font-weight: 800;
+  line-height: 1.3;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.premium-services-section .section-subtitle {
+  color: #4A4A6D;
+  font-size: 1.1rem;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  line-height: 1.6;
+}
+
+.services-grid-new {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto 60px;
+}
+
+.service-card-white {
+  background: #FFFFFF;
+  padding: 40px 30px;
+  border-radius: 24px;
+  text-align: left;
+  border: 1px solid rgba(37, 13, 99, 0.08);
+  box-shadow: 0 10px 40px rgba(37, 13, 99, 0.04);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card-white:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(37, 13, 99, 0.12);
+  border-color: rgba(37, 13, 99, 0.15);
+}
+
+.card-icon-box {
+  width: 55px;
+  height: 55px;
+  background: #EEF2FF;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+}
+
+.service-card-white h3 {
+  color: #250D63;
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+  font-weight: 750;
+}
+
+.inspection-tag-green {
+  color: #10B981;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.service-card-white p {
+  color: #555577;
+  font-size: 0.98rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.card-checklist-v2 {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0;
+}
+
+.card-checklist-v2 li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #250D63;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.card-checklist-v2 li span {
+  color: #10B981;
+  font-size: 1.1rem;
+}
+
+/* TRUST PILLS */
+.trust-badges-flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.badge-pill-light {
+  background: #FFFFFF;
+  padding: 14px 28px;
+  border-radius: 100px;
+  border: 1px solid #10B981;
+  color: #065F46;
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.1);
+}
+
+@media (max-width: 768px) {
+  .services-grid-new {
+    grid-template-columns: 1fr;
   }
 }
